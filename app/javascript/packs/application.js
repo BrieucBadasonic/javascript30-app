@@ -16,13 +16,9 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import { challenge01 } from '../plugins/challenge01';
-
-// import { finishrideButton } from "../plugins/finishride_button";
-
-
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+import { challenge02 } from '../plugins/challenge02';
 
 document.addEventListener('turbolinks:load', () => {
   challenge01();
+  challenge02();
 });
