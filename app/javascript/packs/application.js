@@ -17,8 +17,10 @@ require("channels")
 
 import { challenge01 } from '../plugins/challenge01';
 import { challenge02 } from '../plugins/challenge02';
+import { challenge03 } from '../plugins/challenge03';
 
 document.addEventListener('turbolinks:load', () => {
   challenge01();
   challenge02();
+  document.addEventListener('DOMcontentLoaded', challenge03());
 });
